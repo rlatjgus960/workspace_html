@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, 
+input, fieldset, legend, p, select, table, th, td, tr, 
+textarea, button, form {
+                margin: 0px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
+
+                
+}
+
+body {font-family: "맑은 고딕", 돋움; font-size: 12px;}
+
+ol,ul {list-style-type: none;}
+
+a:link {text-decoration: none; color: #000000;}
+a:visited {text-decoration: none; color: #000000;}
+a:active {text-decoration: none; color: #000000;}
+a:hover {text-decoration: none; color: #000000;}
+
+/* clearfix 쪼그라든 애한테 주기 */
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+/* 레이아웃 */
+#wrap {width: 1000px; margin: 0px auto;}
+#header {
+    border-bottom: 2px solid #dddddd;
+    padding: 0px 0px 10px 0px
+}
+#nav {
+    background-color: #ffffff;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* 전체화면사용 */
+#full-contents {
+
+    padding: 15px 10px 15px 10px;
+}
+
+/* 2단화면사용 */
+#contents {
+    padding: 15px 0px 15px 0px;
+    
+}
+
+#footer {
+    background-color: #dddddd;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+}
+
+/* 헤더 */
+
+#header h1>a {
+    font-size: 35px;
+    color: #79b30b;
+    margin: 10px 0px 0px 0px;
+    float: left;
+}
+
+#header ul {
+    float: right;
+    margin: 15px 0px 0px 0px;
+}
+
+#header ul>li {
+    float: left;
+    margin: 0pc 0pc 0px 20px;
+    border: 1px solid #bfbfbf;
+    background-color: #efefef;
+    padding: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    
+}
+
+
+/* 네비 */
+#nav ul>li {
+    width: 249px;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-right: 1px solid #000000;
+   
+}
+
+#nav ul>li.last {
+    border-right: none;
+}
+
+
+/* 게시판 */
+
+#contents #aside {
+    float: left;
+    width: 180px;
+    margin: 0px 15px 0px 0px;
+}
+
+#contents #aside h2 {
+    padding: 20px 15px 20px 15px;
+    background-color: #dddddd;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contents #aside ul>li {
+    padding: 5px 5px 5px 5px;
+    margin: 5px 0px 0px 0px;
+    border: 1px solid #a6a6a6;
+    font-size: 15px;
+    text-align: left;
+
+}
+
+
+/* 메인 */
+#contents #main {
+    float: left;
+    width: 800px;
+
+}
+
+#contents #main #main-head {
+    margin: 0px 0px 20px 0px;
+    border-bottom: 1px solid #a6a6a6;
+
+    
+}
+
+#contents #main #main-head h3 {
+    float: left;
+    margin: 20px 0px 0px 0px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+#contents #main #main-head ul {
+    float: right;
+
+
+}
+
+#contents #main #main-head ul>li {
+    float: left;
+    margin: 25px 0px 0px 0px;
+    font-size: 15px;
+}
+
+#contents #main #main-head ul>li:after {
+    content: ">";
+}
+
+#contents #main #main-head ul>li.last:after {
+    content: "";
+}

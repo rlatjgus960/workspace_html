@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, 
+input, fieldset, legend, p, select, table, th, td, tr, 
+textarea, button, form {
+                margin: 0px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
+                font-family: "맑은 고딕", 돋움;
+                font-size: 12px;
+}
+
+/* 게시판 외곽 */
+#board {
+    width: 700px;
+
+}
+
+/**********게시판 공통***********/
+/* 폼 그룹 */
+.form-group {
+    padding: 5px 5px 5px 5px;
+    
+}
+
+
+
+/* 폼 텍스트 */
+.form-group .form-text {
+    width: 80px;
+    display: inline-block;
+    
+}
+
+/******************************/
+
+/* 게시판선택 */
+#sel-board {
+    width: 150px;
+}
+
+/* 제목 */
+#txt-title {
+    width: 500px;
+    padding: 3px 0px 3px 0px;
+}
+
+/* 비밀번호 */
+#txt-pw { 
+    width: 150px;
+}
+
+
+/* 공개범위, 허용범위 */
+input[type="radio"], input[type=checkbox] {
+    margin: 0px 20px 0px 0px
+}
+
+
+/* 내용 */
+#txt-content {
+    width: 686px;
+    height: 200px;
+    
+}
+
+/* 버튼 */
+.btn-area { 
+    margin:20px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
+    border-top: 1px solid #e6e6e6;
+    text-align: center;
+}
+
+button {
+    width: 60px;
+    padding: 5px 5px 5px 5px;
+    margin: 0px 0px 10px 0px;
+}
+

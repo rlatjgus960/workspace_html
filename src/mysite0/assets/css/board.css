@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+
+
+/* 검색영역 */
+#board #search-area {
+    margin:0px 0px 10px 0px;
+
+}
+
+#board #search-area form {
+    float: right;
+
+}
+
+#contents #main #main-body form input[type="text"] {
+    width: 150px;
+    height: 25px;
+
+}
+
+#board form button {
+    
+    padding: 3px 5px 3px 5px;
+}
+
+
+
+
+/* 게시판 리스트 */
+#board table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+    margin: 0px 0px 10px 0px;
+
+}
+
+#board table>thead>tr>th {
+    background-color: #dddddd;
+}
+
+#list-table tbody>tr>td {
+    border-top: 1px dotted #808080;
+}
+
+#board #board-list table>thead>tr>th, #board table>tbody>tr>td {
+    padding: 8px 5px 8px 5px;
+}
+
+
+/* 페이징 */
+
+#board #pager {
+    text-align: center; /* 2. 얘랑 */
+    margin: 0px 0px 0px 0px;
+}
+
+#board #pager ol {
+    display: inline-block; /* 얘 쓰고 ol에 클리어픽스 줘서 가운데정렬 하는 방법 */
+    width: 190px;
+    /* 1. 마진으로 가운데정렬하는 방법.. 인데 클리어픽스 이거도 필요한가? */
+    /* margin: 0 auto; */
+
+
+
+}
+
+#board #pager ol>li {
+    float: left;
+    margin: 0px 5px 0px 0px;
+
+}
+
+#board #pager ol>li>a.active {
+    font-size: 15px;
+    font-weight: bold;
+    color: #0000ff;
+}
+
+#board #pager #btn-write {
+    float: right;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #808080;
+    background-color: #dddddd;
+    border-radius: 2px;
+
+}
+
+#gallary-list img {
+    width: 250px;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #dddddd;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어로 사이트 읽어주거나 하는.. 그런거 할때 필요 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 한글 해석 방식 -->
+        <title>html5</title>
+
+        <style>
+            /* #txt-upw {font-size: 50px;} */
+            input[name="upw"] {font-size: 50px;}
+        </style>
+    </head>
+
+    <body>
+
+        
+        <!-- <input type="text"> <br>
+        <input type="password">
+
+        <input type="button" value="저장">
+        <button>저장</button>
+        <input type="submit" value="저장"> -->
+
+            <form action="join.jsp" method="get">
+                <label for="txt-uid">아이디</label> <!-- label 태그를 사용해야함 -->
+                <!-- <label for="uid">아이디</label> -->
+                <input id="txt-uid" type="text" name="userid" value="" placeholder="아이디"> <br>
+                
+                <label for="txt-upw">패스워드</label>
+                <input id="txt-upw" type="password" name="upw" value=""> <br>
+            
+
+                <label for="uname">이름</label>
+                <input id="uname" type="uname" type="text" name="username" value="" placeholder="이름"> <br>
+
+                <label for="file-proimg">프로필사진</label>
+                <input id="file-proimg" type="file" name="file" value=""> <br>
+
+                <!-- 추가로 확인 테스트 해볼것 -->
+                <input type="date"> <!-- 익플에서는 안돌아감 --> <br>
+                <input type="email"> <br>
+                <input type="number"> <br>
+                <input type="color"> <br>
+                <br>
+
+                <label for="rdo-apple">사과</label>
+                <input id="rdo-apple" name="fruit" type="radio" value="apple">
+
+                <label for="rdo-grape">포도</label>
+                <input id="rdo-grape" name="fruit" type="radio" value="grape" checked="checked">
+
+                <label for="rdo-orange">오렌지</label>
+                <input id="rdo-orange" name="fruit" type="radio" value="orange">
+
+                <br>
+                <br>
+
+
+                <label for="rdo-m1">1월</label>
+                <input type="radio" name="month" id="rdo-m1">
+
+                <label for="rdo-m2">2월</label>
+                <input type="radio" name="month" id="rdo-m2">
+
+                <label for="rdo-m3">3월</label>
+                <input type="radio" name="month" id="rdo-m3">
+
+                <br>
+                <br>
+                <br>
+
+                <label for="chk-book">독서</label>
+                <input type="checkbox" name="hobby" value="book" id="chk-book">
+
+                <label for="chk-music">음악</label>
+                <input type="checkbox" name="hobby" value="music" id="chk-music">
+
+                <label for="chk-trip">여행</label>
+                <input type="checkbox" name="hobby" value="trip" id="chk-trip">
+
+                <br>
+                <br>
+
+
+                <label for="chk-dog">개</label>
+                <input type="checkbox" name="pet" value="dog" id="chk-dog">
+
+                <label for="chk-cat">고양이</label>
+                <input type="checkbox" name="pet" value="cat" id="chk-cat">
+
+                <label for="chk-bird">새</label>
+                <input type="checkbox" name="pet" value="bird" id="chk-bird">
+
+
+                <br>
+                <br>
+                <label for="sel-telecom">이동통신사</label>
+                <select name="telecom" id="sel-telecom">
+                    <option value="" selected="selected">선택하세요</option>
+                    <option value="sk">SKT</option>
+                    <option value="kt">KT</option>
+                    <option value="lg">LGU+</option>
+                    <option value="et">기타</option>
+                </select>
+
+                <br>
+                <br>
+                <label for="are-content">본문</label>
+                <textarea id="are-content" name="content">aaaaaa</textarea>
+
+
+                <br>
+                <br>
+                <br>
+                <input type="hidden" name="code" value="1234"> <br>
+
+                <button type="submit">전송</button> <!--얘를 더 추천-->
+                <!-- <input type="submit" value="전송"> 비추천 -->
+
+                <button type="reset">초기화</button>
+            </form>    
+
+
+
+    </body>
+</html>
